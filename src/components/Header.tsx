@@ -8,7 +8,7 @@ export const Header = () => {
             <div className="max-content">
                 <h1 className="font-bold font-mono text-xl">
                     {string}
-                    <span className="text-indigo-500">RR</span>
+                    <span className="text-indigo-500">R2Develop</span>
                     {string2}
                 </h1>
             </div>

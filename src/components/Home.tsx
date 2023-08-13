@@ -14,17 +14,17 @@ export const Home = () => {
             <div className="text-center p-3 col-12 lg:col-6 lg:col-offset-3">
                 <Header></Header>
             </div>
-            <div className="p-0 text-justify col-12 lg:col-6 lg:col-offset-3">
+            <div className="p-3 text-justify col-12 lg:col-6 lg:col-offset-3">
                 <Presentacion></Presentacion>
-            </div>
-            <div className="text-center p-2 font-bold col-12 lg:col-6 lg:col-offset-3">
                 <Opciones></Opciones>
             </div>
+            <div className="text-center p-5 font-bold col-12 lg:col-6 lg:col-offset-3">
+            </div>
             <TabView className="text-center p-0 font-bold col-12 lg:col-6 lg:col-offset-3" >
-                <TabPanel header="Experiencia">
+                <TabPanel header={<u>Experiencia</u>}>
                     <Experiencia></Experiencia>
                 </TabPanel>
-                <TabPanel header="Proyectos">
+                <TabPanel header={<u>Proyectos</u>}>
                     <Proyectos></Proyectos>
                 </TabPanel>
             </TabView>

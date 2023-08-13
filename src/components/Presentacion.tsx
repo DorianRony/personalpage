@@ -4,12 +4,17 @@ export const Presentacion = () => {
     return (
         <div>
             <div className={"text-gray-500 mb-2"}>¡Hola! 👋</div>
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-600">
+            <div  className="text-5xl font-bold from-indigo-500 text-bluegray-900">
                 Soy Rony Reyna
             </div>
             <div className="italic text-slate-500">Backend Developer</div>
 
-            <p>Soy un profesional altamente apasionado por la tecnología, con habilidades en trabajo en equipo, comunicación efectiva y organización. Con más de 5 años de experiencia en el sector tecnológico, he desarrollado habilidades en liderazgo, resolución de problemas y pensamiento crítico. Me esfuerzo cada día para dar el máximo de mí en cada actividad que desempeño y estoy constantemente buscando nuevos desafíos y oportunidades para crecer en mi carrera.</p>
+            <p>Soy un apasionado profesional de la tecnología con más de 5 años de experiencia en el sector.
+                Destaco en liderazgo, resolución de problemas y comunicación efectiva.
+                Mi enfoque es maximizar mi rendimiento en cada tarea y siempre estoy en
+                busca de nuevos desafíos para mi crecimiento profesional.</p>
+            <p>Te invito a explorar mi experiencia y proyectos para conocer de cerca mi trayectoria
+                y contribuciones en diversos campos.</p>
         </div>
     )
 }

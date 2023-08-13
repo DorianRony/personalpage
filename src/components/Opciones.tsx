@@ -1,7 +1,8 @@
 import React from 'react'
 import {Button} from "primereact/button";
-import {GithubIcon, LinkedinIcon, MailIcon} from "../icons";
+import {GithubIcon, LinkedinIcon, MailIcon, PDFIcon} from "../icons";
 import {Link} from "react-router-dom";
+
 
 export const Opciones = () => {
     const social = [
@@ -22,15 +23,26 @@ export const Opciones = () => {
         },
     ]
 
+    const onButtonClick = async () => {
+            const archivoURL = `${process.env.PUBLIC_URL}/Perfilprofesional_RonyReyna.pdf`;
+            console.log(archivoURL)
+            window.open(archivoURL, '_blank');
+    };
 
     return (
         /*flex items-center gap-2 bg-white border border-gray-900 hover:text-gray-950 text-gray-700 text-sm*/
         <>
-            <div className="card flex justify-content-start gap-3">
+            <div className="card flex flex-wrap justify-content-start gap-3">
                 {social.map((item, index) =>
-                    <Button className="bg-white border-gray-900 p-0 pr-3 text-sm text-gray-700 shadow-5 hover:shadow-8"
-                        label={item.name} icon={item.icon}></Button>
+                    <Link to={item.url} target={"_blank"}>
+                        <Button
+                            className="bg-white border-gray-900 p-0 pr-3 text-sm text-gray-700 shadow-5 hover:shadow-8"
+                            label={item.name} icon={item.icon}></Button>
+                    </Link>
                 )}
+                <Button label="Descargar CV" icon={<PDFIcon className="w-6 h-6"></PDFIcon>}
+                        className="bg-white border-gray-900 p-0 pr-3 text-sm text-gray-700 shadow-5 hover:shadow-8"
+                        onClick={e => onButtonClick()}></Button>
             </div>
         </>
     )
