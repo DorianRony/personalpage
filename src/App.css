@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.transparent-background {
+  background: transparent;
+}
+
+.p-tabview .p-tabview-panels {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.p-tabview .p-tabview-nav {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.p-card {
+  background: transparent !important;
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.font-mono {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.italic {
+  font-style: italic;
+}
+
