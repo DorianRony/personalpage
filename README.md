@@ -1,3 +1,19 @@
+# Portafolio profesional de Rony Reyna
+
+React + TypeScript + PrimeReact, con Create React App. Perfil profesional personal y marca de servicios R2ST — Soluciones Tecnológicas.
+
+Perfil actualizado: SERTECPET desde enero de 2024, fechas de Kruger actualizadas, más de 8 años de experiencia y proyectos con atribución compartida. Mantiene la arquitectura existente.
+
+Sitio: [dorianrony.github.io/personalpage](https://dorianrony.github.io/personalpage/).
+
+El CV histórico se retiró de los recursos publicables tras conservar y verificar una copia privada fuera del repositorio. El contacto provisional es `ronyreyna1995@gmail.com`.
+
+Las fuentes están en `master`. La publicación existente usa `npm run deploy`: recompila el sitio y publica `build` en `gh-pages`; GitHub Pages sirve la raíz de esa rama. Para validar localmente: `npm run build`, `npx tsc --noEmit`, `npx eslint src --ext .ts,.tsx --max-warnings 0` y `CI=true npm test -- --watchAll=false --runInBand`.
+
+Las instrucciones originales del proyecto se conservan a continuación.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

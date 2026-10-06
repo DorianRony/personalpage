@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+/.npm-cache
+
+# CV histórico retirado de los recursos publicables con autorización del usuario.
+/public/Perfilprofesional_RonyReyna.pdf
 /.pnp
 .pnp.js
 

@@ -1,8 +1,9 @@
-// @ts-ignore
-export const GithubIcon = (className) => {
+type IconProps = { className?: string };
+export const GithubIcon = ({className}: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
             className={className}
             width="44"
             height="44"
@@ -19,11 +20,11 @@ export const GithubIcon = (className) => {
         </svg>
     )
 }
-// @ts-ignore
-export const LinkedinIcon = (className) => {
+export const LinkedinIcon = ({className}: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
             className={className}
             width="44"
             height="44"
@@ -43,11 +44,11 @@ export const LinkedinIcon = (className) => {
         </svg>
     )
 }
-// @ts-ignore
-export const MailIcon = ({className}) => {
+export const MailIcon = ({className}: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
             className={className}
             width="44"
             height="44"

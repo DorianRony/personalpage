@@ -9,6 +9,7 @@ function App() {
             backgroundPosition: "top",
             backgroundImage: `url(${background})`
         }}>
+            <a className="skip-link" href="#contenido">Ir al contenido</a>
             <Home></Home>
         </div>
     );

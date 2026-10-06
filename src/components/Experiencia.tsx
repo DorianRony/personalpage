@@ -4,15 +4,22 @@ import {Card} from "primereact/card";
 export const Experiencia = () => {
     const experienciaData = [
         {
+            position: "Desarrollador de software",
+            location: "Ecuador",
+            company: "SERTECPET",
+            time: "ene. 2024 - actualidad",
+            resume: "Mi etapa profesional actual en desarrollo de software. Mi enfoque es el software empresarial, las APIs y la integración de sistemas."
+        },
+        {
             position: "Software Developer",
             location:"Quito - Ecuador - Remoto",
             company: "Kruger Corp",
-            time: "abr 2022 - actualidad",
+            time: "abr. 2022 - ene. 2024",
             resume:
-                "En Kruger, como desarrollador Java, soy responsable de diseñar y desarrollar " +
+                "En Kruger, como desarrollador Java, fui responsable de diseñar y desarrollar " +
                 "microservicios utilizando Java y Spring Boot. Mi experiencia en el desarrollo de software me permite " +
                 "crear soluciones escalables y eficientes para satisfacer las necesidades de negocio de nuestros clientes." +
-                " Además, me encargo del mantenimiento de aplicaciones desarrolladas con Angular y Java, revisión " +
+                " Además, me encargué del mantenimiento de aplicaciones desarrolladas con Angular y Java, revisión " +
                 "de servicios con Postman, consultas y manejo de bases de datos con SQL, y versionamiento de código con " +
                 "Git, manejo de Jira, Bitbucket, y Confluence. Estoy comprometido con el aprendizaje continuo y la adopción " +
                 "de las últimas tecnologías para mejorar el rendimiento y la funcionalidad del software."
@@ -51,7 +58,7 @@ export const Experiencia = () => {
         <>
             <div className="card">
                 {experienciaData.map(item =>
-                    <Card  title={<>{item.position} - {item.company}</>}
+                    <Card key={item.company} title={<>{item.position} - {item.company}</>}
                           subTitle={<>
                               <div>
                                   <label>{item.location}</label>

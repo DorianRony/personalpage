@@ -10,11 +10,11 @@ import {TabPanel, TabView} from "primereact/tabview";
 
 export const Home = () => {
     return (
-        <div className="grid">
+        <main id="contenido" className="grid portfolio-layout">
             <div className="text-center p-3 col-12 lg:col-6 lg:col-offset-3">
                 <Header></Header>
             </div>
-            <div className="p-3 text-justify col-12 lg:col-6 lg:col-offset-3">
+            <div className="p-3 col-12 lg:col-6 lg:col-offset-3 profile-intro">
                 <Presentacion></Presentacion>
                 <Opciones></Opciones>
             </div>
@@ -28,6 +28,9 @@ export const Home = () => {
                     <Proyectos></Proyectos>
                 </TabPanel>
             </TabView>
-        </div>
+            <footer className="portfolio-footer col-12 lg:col-6 lg:col-offset-3">
+                Rony Reyna · Ecuador<br />R2ST — Soluciones Tecnológicas
+            </footer>
+        </main>
     )
 }
